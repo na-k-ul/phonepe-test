@@ -15,7 +15,7 @@ const MERCHANT_ID = process.env.MERCHANT_ID;
 const PHONE_PE_HOST_URL = "https://api.phonepe.com/apis/hermes";
 const SALT_INDEX = 1;
 const SALT_KEY = process.env.SALT_KEY;
-const APP_BE_URL = process.env.APP_BE_URL || "https://localhost:3010"; // our application
+const APP_BE_URL = "https://localhost:3010"; // our application
 
 // setting up middleware
 app.use(cors());
@@ -51,7 +51,7 @@ app.get("/pay", async function (req, res, next) {
     merchantTransactionId: merchantTransactionId,
     merchantUserId: userId,
     amount: amount * 100, // converting to paise
-    redirectUrl: `${APP_BE_URL}/payment/validate/${merchantTransactionId}`,
+    redirectUrl: `www.zeroxweb.shop/payment/validate/${merchantTransactionId}`,
     redirectMode: "REDIRECT",
     mobileNumber: '9482191177',
     paymentInstrument: {
