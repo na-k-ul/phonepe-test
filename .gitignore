@@ -1,0 +1,38 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment variables (secrets)
+.env
+
+# Logs
+logs/
+*.log
+*.out
+*.pid
+*.seed
+*.gz
+log/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Build and cache files
+dist/
+build/
+.cache/
+public/
+
+# Temporary files
+tmp/
+temp/
+*.bak
